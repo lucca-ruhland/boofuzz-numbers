@@ -39,7 +39,7 @@ class Int(BasePrimitive):
 
 def s_int(value=0, s_format="i", i_min:int=0, i_max:int=100, max_mutations:int=1000, fuzzable=True, name=None):
     blocks.CURRENT.push(
-        Float(
+        Int(
             name=name,
             default_value=value,
             s_format=s_format,
