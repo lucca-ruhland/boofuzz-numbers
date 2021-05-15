@@ -38,8 +38,8 @@ from boofuzz_numbers import s_int
 s_initialize('int_test')
 if s_block_start('integer_value'):
     s_float(value=30,              # default value
-            f_min=10,              # minimal int value
-            f_max=40,              # maximal int value
+            i_min=10,              # minimal int value
+            i_max=40,              # maximal int value
             max_mutations=100,     # Number of how many different float values will be generated
             fuzzable=True,         # if True: will be fuzzed
             name='MyIntName'       # name of the primitive
